@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/*
+* @Author: Marte
+* @Date:   2018-02-01 16:40:26
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-02-03 13:14:48
+*/
+header {
+  height: 146px;
+  display: flex;
+  justify-content: space-between; }
+  header h1 {
+    width: 131px;
+    height: 65px;
+    padding-top: 39px; }
+  header div p {
+    line-height: 146px;
+    font-size: 14px; }
+    header div p span {
+      display: inline-block;
+      width: 20px;
+      height: 17px;
+      background: url(../img/headico.png) no-repeat;
+      margin: 0 4px 0 15px; }
+
+main {
+  height: 535px;
+  position: relative;
+  background: #fefefe url(../img/memberbg.jpg) center 0 no-repeat; }
+  main .register {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    margin-left: 150px;
+    width: 298px;
+    padding: 30px 40px;
+    background: #fff;
+    border: solid 1px #e8e8e8;
+    box-shadow: 3px 3px 7px #eee; }
+    main .register .member_title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #333; }
+    main .register .member_li {
+      border: solid 1px #e8e8e8;
+      background: #fff;
+      margin-bottom: 10px;
+      padding: 4px 0; }
+      main .register .member_li .memberico01, main .register .member_li .memberico02, main .register .member_li .memberico03, main .register .member_li .memberico04 {
+        width: 26px;
+        height: 26px;
+        padding-right: 4px;
+        background: url(../img/memberico.gif) no-repeat;
+        margin: 0 4px 0 6px;
+        border-right: solid 1px #e8e8e8; }
+      main .register .member_li .memberico02 {
+        background-position: -26px 0; }
+      main .register .member_li .memberint {
+        width: 240px;
+        margin: 0 0 0 4px;
+        position: relative; }
+        main .register .member_li .memberint input {
+          width: 100%;
+          padding: 0;
+          border: none;
+          font-size: 14px;
+          height: 26px;
+          line-height: 26px;
+          color: #333; }
+    main .register .clearfix:after {
+      display: block;
+      clear: both;
+      content: ".";
+      visibility: hidden;
+      height: 0; }
+    main .register .m_opt {
+      padding: 7px 0 5px 0; }
+    main .register .men_err_msg {
+      line-height: 30px;
+      color: #cc3d3d; }
+    main .register button {
+      width: 100%;
+      height: 48px;
+      background: #333;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      font-size: 18px;
+      font-family: "微软雅黑"; }
+    main .register .m_t {
+      text-align: right;
+      margin: 20px 0 7px 0; }
+      main .register .m_t a.acclink {
+        color: #669aca; }
+    main .register .jointLogonBox .jointLogonBox_tit {
+      height: 20px;
+      position: relative; }
+      main .register .jointLogonBox .jointLogonBox_tit .jlb_mid_line {
+        border-bottom: solid 1px #e8e8e8;
+        left: 0;
+        top: 8px;
+        width: 100%;
+        position: absolute; }
+      main .register .jointLogonBox .jointLogonBox_tit .jlb_theme {
+        background: #fff;
+        color: #999;
+        margin: 0 auto;
+        text-align: center;
+        width: 110px;
+        position: relative; }
+    main .register .jointLogonBox_ico {
+      padding: 20px 25px 5px 25px; }
+    main .register .jointLogonBox_ico li {
+      width: 50%; }
+      main .register .jointLogonBox_ico li a {
+        display: block;
+        width: 35px;
+        height: 35px;
+        background: url(../img/jointLogin.gif) no-repeat;
+        margin: 0 auto;
+        filter: alpha(opacity=50);
+        opacity: .5; }
+      main .register .jointLogonBox_ico li .jlb_wechat {
+        background-position: -35px 0; }
+      main .register .jointLogonBox_ico li .jlb_sina {
+        background-position: 0 0; }
+      main .register .jointLogonBox_ico li:hover a {
+        opacity: 1; }

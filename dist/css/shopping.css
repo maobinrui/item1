@@ -1,0 +1,101 @@
+/*
+* @Author: Marte
+* @Date:   2018-02-03 14:53:15
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-02-05 20:26:01
+*/
+@import url(base.css);
+@import url(headernav.css);
+@import url(footer.css);
+@import url(footer-commonality.css);
+main > div {
+  margin-bottom: 20px;
+  border: solid 1px #e8e8e8; }
+
+main .car .con {
+  width: 900px;
+  height: 209px;
+  margin: 55px 149px 0;
+  padding-bottom: 96px;
+  text-align: center; }
+  main .car .con .cartNico {
+    width: 46px;
+    height: 48px;
+    background: url(../img/shoppingimg/cartNone.gif) no-repeat;
+    margin: 0px auto; }
+  main .car .con .cartNtxt {
+    font-size: 22px;
+    color: #999999;
+    margin: 15px 0px; }
+  main .car .con .cartNlog {
+    color: #999999; }
+  main .car .con .cartNbtn {
+    width: 350px;
+    margin: 40px auto 0px;
+    display: flex; }
+    main .car .con .cartNbtn a {
+      display: inline-block;
+      width: 150px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 14px;
+      color: white;
+      text-align: center;
+      margin: 0px 10px;
+      background: #333333;
+      border-radius: 3px; }
+
+main .like .cart_recommend_title {
+  height: 70px;
+  line-height: 70px;
+  border-bottom: solid 1px #e8e8e8;
+  margin: 0 30px; }
+
+main .like .swiper-container3 {
+  width: 1140px;
+  overflow: hidden;
+  position: relative; }
+  main .like .swiper-container3 .slide_small_ul {
+    width: 1048px;
+    padding: 20px 40px;
+    margin: 0 auto;
+    visibility: visible;
+    z-index: 2;
+    left: 0px; }
+    main .like .swiper-container3 .slide_small_ul li {
+      float: left;
+      width: 220px;
+      height: 382px;
+      margin: 0 21px;
+      text-align: center; }
+      main .like .swiper-container3 .slide_small_ul li a {
+        display: block; }
+        main .like .swiper-container3 .slide_small_ul li a img {
+          margin: 0 auto; }
+        main .like .swiper-container3 .slide_small_ul li a .pro_recommend_name {
+          padding: 10px 16px 16px 16px;
+          line-height: 2;
+          margin-bottom: 5px; }
+      main .like .swiper-container3 .slide_small_ul li .money {
+        color: #ccc;
+        margin-top: 10px; }
+      main .like .swiper-container3 .slide_small_ul li .btn {
+        width: 126px;
+        height: 33px;
+        line-height: 33px;
+        border: solid 1px #e8e8e8;
+        margin: 25px auto 30px; }
+  main .like .swiper-container3 .small_bt {
+    width: 17px;
+    height: 38px;
+    position: absolute;
+    z-index: 3;
+    background: #fff;
+    cursor: pointer;
+    top: 150px; }
+  main .like .swiper-container3 .prev {
+    left: 0;
+    background: url(../img/pre_btn.png) no-repeat; }
+  main .like .swiper-container3 .next {
+    right: 0;
+    background: url(../img/next_btn.png) no-repeat; }

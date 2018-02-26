@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>美西——列表页</title>
+    <!-- <link rel="stylesheet" type="text/css" href="../css/base.css" /> -->
+    <link rel="stylesheet" type="text/css" href="../css/list.css" />
+    <!--<link rel="stylesheet"  href="css/style3.css" media="screen and (max-width:970px)">
+    <link rel="stylesheet"  href="css/style2.css" media="screen and (min-width:970px) and (max-width:1170px)">
+    <link rel="stylesheet"  href="css/style1.css" media="screen and (min-width:1170px)">-->
+
+</head>
+<body>
+    <header>
+        <div id="top">
+            <ul class="w">
+                <li class="l"><em class="hico01"></em><span>4000-250-630</span></li>
+                <li class="l "><a href="./activity.html" class="b"><em class="hico02"></em>下载美西APP</a>
+                    <div class="headerApp_m">
+                        <div class="sj"></div>
+                        <a href="./activity.html" class="headerApp_code" title="下载美西APP" target="_blank">
+                            <img src="../img/ewm_indexTop_1.png" alt="" />
+                            <p>“扫码下载”</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="r"><a href="./shopping.html" class="b"><em class="hico03"></em>购物袋（0）</a>
+                     <div class="headerCart_m">
+                         <div class="sj"></div>
+                         <div class="headerCart_m_info">
+                            <div class="headerCprpN">您的购物袋是空的</div>
+                         </div>
+                    </div>
+                </li>
+                <li class="r"><a href="./register.html">登录</a><a href="./login.html">注册</a></li>
+            </ul>
+        </div>
+        <div id="log" class="w">
+            <h1><a href=""><img src="../img/logo.png" alt="美西" /></a></h1>
+            <div id="seach">
+                <input id="sch_kwd" class="sch_kwd" type="text" value placeholder="请输入关键字">
+                <button class="header_search_btn " onclick="search();"></button>
+            </div>
+        </div>
+    </header><!-- /header -->
+    <nav>
+        <ul class="w">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">新近单品<em></em></a><div class="nav_list">
+                <div class="erji">
+                    <dl>
+                        <dt><a href="">男仕 Man</a></dt>
+                        <dd><a href="">包袋 Bags</a></dd>
+                        <dd><a href="">配饰 Accessories</a></dd>
+                        <dd><a href="">鞋履 Shoes</a></dd>
+                        <dd><a href="">服装 Clothes</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="">女士 Woman</a></dt>
+                        <dd><a href="">包袋 Bags</a></dd>
+                        <dd><a href="">配饰 Accessories</a></dd>
+                        <dd><a href="">鞋履 Shoes</a></dd>
+                        <dd><a href="">服装 Clothes</a></dd>
+                    </dl>
+                </div>
+            </div></li>
+            <li><a href="#">全球购</a></li>
+            <li><a href="#">女士<em></em></a><div class="nav_list">
+                <div class="erji">
+                    <dl>
+                        <dt><a href="">包袋 Bags</a></dt>
+                        <dd><a href="">手提包 Totes</a></dd>
+                        <dd><a href="">单肩包 Shoulder Bags</a></dd>
+                        <dd><a href="">斜挎包 Messenger Bags</a></dd>
+                        <dd><a href="">手拿包 Clutch Bags</a></dd>
+                        <dd><a href="">双肩包 Travel Bags</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="">配饰 Accessories</a></dt>
+                        <dd><a href="">所有配饰</a></dd>
+                        <dd><a href="">钱包 Wallets</a></dd>
+                        <dd><a href="">手表 Watches</a></dd>
+                        <dd><a href="">太阳眼镜 Sunglasses</a></dd>
+                        <dd><a href="">饰品 Jewelry</a></dd>
+                        <dd><a href="">腰带 Belts</a></dd>
+                        <dd><a href="">围巾 Scarf</a></dd>
+                        <dd><a href="">小配件 Small Acc.</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="">鞋履 Shoes</a></dt>
+                        <dd><a href="">所有鞋履</a></dd>
+                        <dd><a href="">正装皮鞋 Business Shoes</a></dd>
+                        <dd><a href="">高跟鞋 Pumps</a></dd>
+                        <dd><a href="">靴子 Boots</a></dd>
+                        <dd><a href="">运动鞋 Gym shoes</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="">服装 Clothes</a></dt>
+                        <dd><a href="">所有服装</a></dd>
+                        <dd><a href="">卫衣 Hoodies</a></dd>
+                        <dd><a href="">衬衫 Shirt</a></dd>
+                        <dd><a href="">针织/毛衫 Knit/Sweater</a></dd>
+                        <dd><a href="">运夹克 Jacket</a></dd>
+                        <dd><a href="">大衣 Coat</a></dd>
+                        <dd><a href="">半裙 Skirts</a></dd>
+                        <dd><a href="">连衣裙 Dresses</a></dd>
+                    </dl>
+                </div>
+            </div></li>
+            <li><a href="#">男仕<em></em></a><div class="nav_list">
+                <div class="erji">
+                    <dl>
+                        <dt><a href="">包袋 Bags</a></dt>
+                        <dd><a href="">手提包 Totes</a></dd>
+                        <dd><a href="">单肩包 Shoulder Bags</a></dd>
+                        <dd><a href="">斜挎包 Messenger Bags</a></dd>
+                        <dd><a href="">手拿包 Clutch Bags</a></dd>
+                        <dd><a href="">双肩包 Travel Bags</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="">配饰 Accessories</a></dt>
+                        <dd><a href="">所有配饰</a></dd>
+                        <dd><a href="">钱包 Wallets</a></dd>
+                        <dd><a href="">手表 Watches</a></dd>
+                        <dd><a href="">太阳眼镜 Sunglasses</a></dd>
+                        <dd><a href="">饰品 Jewelry</a></dd>
+                        <dd><a href="">腰带 Belts</a></dd>
+                        <dd><a href="">围巾 Scarf</a></dd>
+                        <dd><a href="">小配件 Small Acc.</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="">鞋履 Shoes</a></dt>
+                        <dd><a href="">所有鞋履</a></dd>
+                        <dd><a href="">正装皮鞋 Business Shoes</a></dd>
+                        <dd><a href="">高跟鞋 Pumps</a></dd>
+                        <dd><a href="">靴子 Boots</a></dd>
+                        <dd><a href="">运动鞋 Gym shoes</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="">服装 Clothes</a></dt>
+                        <dd><a href="">所有服装</a></dd>
+                        <dd><a href="">卫衣 Hoodies</a></dd>
+                        <dd><a href="">衬衫 Shirt</a></dd>
+                        <dd><a href="">针织/毛衫 Knit/Sweater</a></dd>
+                        <dd><a href="">运夹克 Jacket</a></dd>
+                        <dd><a href="">大衣 Coat</a></dd>
+                        <dd><a href="">半裙 Skirts</a></dd>
+                        <dd><a href="">连衣裙 Dresses</a></dd>
+                    </dl>
+                </div>
+            </div></li>
+            <li><a href="#">家居生活<em></em></a><div  class="nav_list">
+                <div class="erji">
+                    <dl>
+                        <dt><a href="">男仕 Man</a></dt>
+                        <dd><a href="">包袋 Bags</a></dd>
+                        <dd><a href="">配饰 Accessories</a></dd>
+                        <dd><a href="">鞋履 Shoes</a></dd>
+                        <dd><a href="">服装 Clothes</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="">女士 Woman</a></dt>
+                        <dd><a href="">包袋 Bags</a></dd>
+                        <dd><a href="">配饰 Accessories</a></dd>
+                        <dd><a href="">鞋履 Shoes</a></dd>
+                        <dd><a href="">服装 Clothes</a></dd>
+                    </dl>
+                </div>
+            </div></li>
+            <li><a href="#">腕表<em></em></a><div class="nav_list">
+                <div class="erji">
+                    <dl>
+                        <dt><a href="">男仕 Man</a></dt>
+                        <dd><a href="">包袋 Bags</a></dd>
+                        <dd><a href="">配饰 Accessories</a></dd>
+                        <dd><a href="">鞋履 Shoes</a></dd>
+                        <dd><a href="">服装 Clothes</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="">女士 Woman</a></dt>
+                        <dd><a href="">包袋 Bags</a></dd>
+                        <dd><a href="">配饰 Accessories</a></dd>
+                        <dd><a href="">鞋履 Shoes</a></dd>
+                        <dd><a href="">服装 Clothes</a></dd>
+                    </dl>
+                </div>
+            </div></li>
+            <li><a href="#">品牌<em></em></a><div class="nav_list">
+                <div class="erji">
+                    <dl>
+                        <dt><a href="">男仕 Man</a></dt>
+                        <dd><a href="">包袋 Bags</a></dd>
+                        <dd><a href="">配饰 Accessories</a></dd>
+                        <dd><a href="">鞋履 Shoes</a></dd>
+                        <dd><a href="">服装 Clothes</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="">女士 Woman</a></dt>
+                        <dd><a href="">包袋 Bags</a></dd>
+                        <dd><a href="">配饰 Accessories</a></dd>
+                        <dd><a href="">鞋履 Shoes</a></dd>
+                        <dd><a href="">服装 Clothes</a></dd>
+                    </dl>
+                </div>
+            </div></li>
+            <li><a href="#">Mzine</a></li>
+        </ul>
+    </nav>
+    <div class="headerShadow"></div>
+    <main  class="w">
+      <!--   <h2></h2> -->
+        <div class="content">
+            <ul class="listScreen">
+                <li class="listScreen_li">
+                    <div class="yiji">
+                        <span>商品分类</span><span class="r">+</span>
+                    </div>
+                <ul class="bor"  style="display: none">
+                        <li class="erji"><span></span>包袋
+                            <ul style="display: none">
+                                <li class="sanji"><span></span>选择全部</li>
+                                <li class="sanji"><span></span>饰品 Jewelry</li>
+                            </ul>
+                        </li>
+
+
+                </ul>
+
+                </li>
+                <li class="listScreen_li"><div  class="yiji"> <span>性别</span><span class="r">+</span> </div>
+                    <div class="bor">
+                        <p class="sanji"><span></span>男女</p>
+                        <p class="sanji"><span></span>男士</p>
+                        <p class="sanji"><span></span>女士</p>
+                    </div>
+                </li>
+                <li class="listScreen_li">
+                    <div class="yiji"><span>品牌</span><span class="r">+</span></div>
+                    <div class="bor">
+                        <p class="sanji"><span></span>"3.1 Phillip Lim 菲利林"</p>
+                        <p class="sanji"><span></span>"A.W.A.K.E  "</p>
+                        <p class="sanji"><span></span>"Acne Studios 艾克妮"</p>
+                        <p class="sanji"><span></span>"Adidas original 阿迪达斯"</p>
+                    </div>
+                </li>
+                <li class="listScreen_li">
+                    <div class="yiji"><span>价格</span><span class="r">+</span></div>
+                    <div class="bor">
+                        <div class="price">
+                            <input title="最低价" class="priceInt priceStart" type="text" value placeholder="￥ 最低价"> - <input title="最高价" class="priceInt priceEnd" type="text" value placeholder="￥ 最高价">
+                        </div>
+                        <a class="pricebtn">确认</a>
+
+                    </div>
+                </li>
+                <li class="listScreen_li">
+                    <div class="yiji"><span>颜色</span><span class="r">+</span></div>
+                    <div class="bor">
+                        <a href="" class="color"><span></span><span></span>黑色</a>
+                        <a href="" class="color"><span></span><span></span>白色</a>
+                        <a href="" class="color"><span></span><span></span>粉色</a>
+                        <a href="" class="color"><span></span><span></span>蓝色</a>
+                        <a href="" class="color"><span></span><span></span>绿色</a>
+                        <a href="" class="color"><span></span><span></span>金色</a>
+                        <a href="" class="color"><span></span><span></span>紫色</a>
+                        <a href="" class="color"><span></span><span></span>黄色</a>
+                    </div>
+
+                </li>
+            </ul>
+
+
+            <div class="prolistMain">
+                <div class="listScreenAll">
+                     <div class="listScreenItem_tit_all l">已选择：</div>
+                        <ul class="clearfix">
+                        <li data_type="fp"  class="clearfix_li"><a title="女士"><div class="alm_m alm_m_fp l"><span>性别：</span>女士</div><span class="clearfix_li_x">╳</span></a></li>
+                        </ul>
+                        <a href="" class="eliminate">清除全部</a>
+                </div>
+                <div class="proFilter_t">
+                    <span>排序：</span>
+                    <a href="" title="新品">新品</a>
+                    <a href="" title="人气">人气</a>
+                    <a href="" title="价格">价格<em class="prSort01"></em></a>
+                    <div class="listscreenNum r"><span>41</span>个结果
+                    </div>
+                </div>
+                <div class="proList">
+                    <ul class="proList_ul">
+                        <li>
+                            <a class="pro_imglink" title="羊皮 女士 单肩包">
+                                <img class="loadimg" src="../img/list/18510759a6989bae555-200x240.jpg">
+                            </a>
+                            <div class="proTips">
+                                <div class="proGlobal_m"></div><a class="pro_name" target="_blank" href="../lmg/list/164514.html" title="羊皮 女士 单肩包">
+                                    <span>Givenchy 纪梵希</span><br>
+                                    羊皮 女士 单肩包
+                                </a>
+                                <div class="pro_price">
+                                    <div class="saleprice"><span class="pro_price_m">￥9330.00</span></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="pro_imglink" title="羊皮 女士 单肩包">
+                                <img class="loadimg" src="../img/list/18510759a6989bae555-200x240.jpg">
+                            </a>
+                            <div class="proTips">
+                                <div class="proGlobal_m"></div><a class="pro_name" target="_blank" href="../lmg/list/164514.html" title="羊皮 女士 单肩包">
+                                    <span>Givenchy 纪梵希</span><br>
+                                    羊皮 女士 单肩包
+                                </a>
+                                <div class="pro_price">
+                                    <div class="saleprice"><span class="pro_price_m">￥9330.00</span></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="pro_imglink" title="羊皮 女士 单肩包">
+                                <img class="loadimg" src="../img/list/18510759a6989bae555-200x240.jpg">
+                            </a>
+                            <div class="proTips">
+                                <div class="proGlobal_m"></div><a class="pro_name" target="_blank" href="../lmg/list/164514.html" title="羊皮 女士 单肩包">
+                                    <span>Givenchy 纪梵希</span><br>
+                                    羊皮 女士 单肩包
+                                </a>
+                                <div class="pro_price">
+                                    <div class="saleprice"><span class="pro_price_m">￥9330.00</span></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="pro_imglink" title="羊皮 女士 单肩包">
+                                <img class="loadimg" src="../img/list/18510759a6989bae555-200x240.jpg">
+                            </a>
+                            <div class="proTips">
+                                <div class="proGlobal_m"></div><a class="pro_name" target="_blank" href="../lmg/list/164514.html" title="羊皮 女士 单肩包">
+                                    <span>Givenchy 纪梵希</span><br>
+                                    羊皮 女士 单肩包
+                                </a>
+                                <div class="pro_price">
+                                    <div class="saleprice"><span class="pro_price_m">￥9330.00</span></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="pro_imglink" title="羊皮 女士 单肩包">
+                                <img class="loadimg" src="../img/list/18510759a6989bae555-200x240.jpg">
+                            </a>
+                            <div class="proTips">
+                                <div class="proGlobal_m"></div><a class="pro_name" target="_blank" href="../lmg/list/164514.html" title="羊皮 女士 单肩包">
+                                    <span>Givenchy 纪梵希</span><br>
+                                    羊皮 女士 单肩包
+                                </a>
+                                <div class="pro_price">
+                                    <div class="saleprice"><span class="pro_price_m">￥9330.00</span></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="pro_imglink" title="羊皮 女士 单肩包">
+                                <img class="loadimg" src="../img/list/18510759a6989bae555-200x240.jpg">
+                            </a>
+                            <div class="proTips">
+                                <div class="proGlobal_m"></div><a class="pro_name" target="_blank" href="../lmg/list/164514.html" title="羊皮 女士 单肩包">
+                                    <span>Givenchy 纪梵希</span><br>
+                                    羊皮 女士 单肩包
+                                </a>
+                                <div class="pro_price">
+                                    <div class="saleprice"><span class="pro_price_m">￥9330.00</span></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="pro_imglink" title="羊皮 女士 单肩包">
+                                <img class="loadimg" src="../img/list/18510759a6989bae555-200x240.jpg">
+                            </a>
+                            <div class="proTips">
+                                <div class="proGlobal_m"></div><a class="pro_name" target="_blank" href="../lmg/list/164514.html" title="羊皮 女士 单肩包">
+                                    <span>Givenchy 纪梵希</span><br>
+                                    羊皮 女士 单肩包
+                                </a>
+                                <div class="pro_price">
+                                    <div class="saleprice"><span class="pro_price_m">￥9330.00</span></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="pro_imglink" title="羊皮 女士 单肩包">
+                                <img class="loadimg" src="../img/list/18510759a6989bae555-200x240.jpg">
+                            </a>
+                            <div class="proTips">
+                                <div class="proGlobal_m"></div><a class="pro_name" target="_blank" href="../lmg/list/164514.html" title="羊皮 女士 单肩包">
+                                    <span>Givenchy 纪梵希</span><br>
+                                    羊皮 女士 单肩包
+                                </a>
+                                <div class="pro_price">
+                                    <div class="saleprice"><span class="pro_price_m">￥9330.00</span></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="pro_imglink" title="羊皮 女士 单肩包">
+                                <img class="loadimg" src="../img/list/18510759a6989bae555-200x240.jpg">
+                            </a>
+                            <div class="proTips">
+                                <div class="proGlobal_m"></div><a class="pro_name" target="_blank" href="../lmg/list/164514.html" title="羊皮 女士 单肩包">
+                                    <span>Givenchy 纪梵希</span><br>
+                                    羊皮 女士 单肩包
+                                </a>
+                                <div class="pro_price">
+                                    <div class="saleprice"><span class="pro_price_m">￥9330.00</span></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="pro_imglink" title="羊皮 女士 单肩包">
+                                <img class="loadimg" src="../img/list/18510759a6989bae555-200x240.jpg">
+                            </a>
+                            <div class="proTips">
+                                <div class="proGlobal_m"></div><a class="pro_name" target="_blank" href="../lmg/list/164514.html" title="羊皮 女士 单肩包">
+                                    <span>Givenchy 纪梵希</span><br>
+                                    羊皮 女士 单肩包
+                                </a>
+                                <div class="pro_price">
+                                    <div class="saleprice"><span class="pro_price_m">￥9330.00</span></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="pro_imglink" title="羊皮 女士 单肩包">
+                                <img class="loadimg" src="../img/list/18510759a6989bae555-200x240.jpg">
+                            </a>
+                            <div class="proTips">
+                                <div class="proGlobal_m"></div><a class="pro_name" target="_blank" href="../lmg/list/164514.html" title="羊皮 女士 单肩包">
+                                    <span>Givenchy 纪梵希</span><br>
+                                    羊皮 女士 单肩包
+                                </a>
+                                <div class="pro_price">
+                                    <div class="saleprice"><span class="pro_price_m">￥9330.00</span></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="pro_imglink" title="羊皮 女士 单肩包">
+                                <img class="loadimg" src="../img/list/18510759a6989bae555-200x240.jpg">
+                            </a>
+                            <div class="proTips">
+                                <div class="proGlobal_m"></div><a class="pro_name" target="_blank" href="../lmg/list/164514.html" title="羊皮 女士 单肩包">
+                                    <span>Givenchy 纪梵希</span><br>
+                                    羊皮 女士 单肩包
+                                </a>
+                                <div class="pro_price">
+                                    <div class="saleprice"><span class="pro_price_m">￥9330.00</span></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="pro_imglink" title="羊皮 女士 单肩包">
+                                <img class="loadimg" src="../img/list/18510759a6989bae555-200x240.jpg">
+                            </a>
+                            <div class="proTips">
+                                <div class="proGlobal_m"></div><a class="pro_name" target="_blank" href="../lmg/list/164514.html" title="羊皮 女士 单肩包">
+                                    <span>Givenchy 纪梵希</span><br>
+                                    羊皮 女士 单肩包
+                                </a>
+                                <div class="pro_price">
+                                    <div class="saleprice"><span class="pro_price_m">￥9330.00</span></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="pro_imglink" title="羊皮 女士 单肩包">
+                                <img class="loadimg" src="../img/list/18510759a6989bae555-200x240.jpg">
+                            </a>
+                            <div class="proTips">
+                                <div class="proGlobal_m"></div><a class="pro_name" target="_blank" href="../lmg/list/164514.html" title="羊皮 女士 单肩包">
+                                    <span>Givenchy 纪梵希</span><br>
+                                    羊皮 女士 单肩包
+                                </a>
+                                <div class="pro_price">
+                                    <div class="saleprice"><span class="pro_price_m">￥9330.00</span></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="pro_imglink" title="羊皮 女士 单肩包">
+                                <img class="loadimg" src="../img/list/18510759a6989bae555-200x240.jpg">
+                            </a>
+                            <div class="proTips">
+                                <div class="proGlobal_m"></div><a class="pro_name" target="_blank" href="../lmg/list/164514.html" title="羊皮 女士 单肩包">
+                                    <span>Givenchy 纪梵希</span><br>
+                                    羊皮 女士 单肩包
+                                </a>
+                                <div class="pro_price">
+                                    <div class="saleprice"><span class="pro_price_m">￥9330.00</span></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="pro_imglink" title="羊皮 女士 单肩包">
+                                <img class="loadimg" src="../img/list/18510759a6989bae555-200x240.jpg">
+                            </a>
+                            <div class="proTips">
+                                <div class="proGlobal_m"></div><a class="pro_name" target="_blank" href="../lmg/list/164514.html" title="羊皮 女士 单肩包">
+                                    <span>Givenchy 纪梵希</span><br>
+                                    羊皮 女士 单肩包
+                                </a>
+                                <div class="pro_price">
+                                    <div class="saleprice"><span class="pro_price_m">￥9330.00</span></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="pro_imglink" title="羊皮 女士 单肩包">
+                                <img class="loadimg" src="../img/list/18510759a6989bae555-200x240.jpg">
+                            </a>
+                            <div class="proTips">
+                                <div class="proGlobal_m"></div><a class="pro_name" target="_blank" href="../lmg/list/164514.html" title="羊皮 女士 单肩包">
+                                    <span>Givenchy 纪梵希</span><br>
+                                    羊皮 女士 单肩包
+                                </a>
+                                <div class="pro_price">
+                                    <div class="saleprice"><span class="pro_price_m">￥9330.00</span></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="pro_imglink" title="羊皮 女士 单肩包">
+                                <img class="loadimg" src="../img/list/18510759a6989bae555-200x240.jpg">
+                            </a>
+                            <div class="proTips">
+                                <div class="proGlobal_m"></div><a class="pro_name" target="_blank" href="../lmg/list/164514.html" title="羊皮 女士 单肩包">
+                                    <span>Givenchy 纪梵希</span><br>
+                                    羊皮 女士 单肩包
+                                </a>
+                                <div class="pro_price">
+                                    <div class="saleprice"><span class="pro_price_m">￥9330.00</span></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="pro_imglink" title="羊皮 女士 单肩包">
+                                <img class="loadimg" src="../img/list/18510759a6989bae555-200x240.jpg">
+                            </a>
+                            <div class="proTips">
+                                <div class="proGlobal_m"></div><a class="pro_name" target="_blank" href="../lmg/list/164514.html" title="羊皮 女士 单肩包">
+                                    <span>Givenchy 纪梵希</span><br>
+                                    羊皮 女士 单肩包
+                                </a>
+                                <div class="pro_price">
+                                    <div class="saleprice"><span class="pro_price_m">￥9330.00</span></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="pro_imglink" title="羊皮 女士 单肩包">
+                                <img class="loadimg" src="../img/list/18510759a6989bae555-200x240.jpg">
+                            </a>
+                            <div class="proTips">
+                                <div class="proGlobal_m"></div><a class="pro_name" target="_blank" href="../lmg/list/164514.html" title="羊皮 女士 单肩包">
+                                    <span>Givenchy 纪梵希</span><br>
+                                    羊皮 女士 单肩包
+                                </a>
+                                <div class="pro_price">
+                                    <div class="saleprice"><span class="pro_price_m">￥9330.00</span></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="pro_imglink" title="羊皮 女士 单肩包">
+                                <img class="loadimg" src="../img/list/18510759a6989bae555-200x240.jpg">
+                            </a>
+                            <div class="proTips">
+                                <div class="proGlobal_m"></div><a class="pro_name" target="_blank" href="../lmg/list/164514.html" title="羊皮 女士 单肩包">
+                                    <span>Givenchy 纪梵希</span><br>
+                                    羊皮 女士 单肩包
+                                </a>
+                                <div class="pro_price">
+                                    <div class="saleprice"><span class="pro_price_m">￥9330.00</span></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="pro_imglink" title="羊皮 女士 单肩包">
+                                <img class="loadimg" src="../img/list/18510759a6989bae555-200x240.jpg">
+                            </a>
+                            <div class="proTips">
+                                <div class="proGlobal_m"></div><a class="pro_name" target="_blank" href="../lmg/list/164514.html" title="羊皮 女士 单肩包">
+                                    <span>Givenchy 纪梵希</span><br>
+                                    羊皮 女士 单肩包
+                                </a>
+                                <div class="pro_price">
+                                    <div class="saleprice"><span class="pro_price_m">￥9330.00</span></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="pro_imglink" title="羊皮 女士 单肩包">
+                                <img class="loadimg" src="../img/list/18510759a6989bae555-200x240.jpg">
+                            </a>
+                            <div class="proTips">
+                                <div class="proGlobal_m"></div><a class="pro_name" target="_blank" href="../lmg/list/164514.html" title="羊皮 女士 单肩包">
+                                    <span>Givenchy 纪梵希</span><br>
+                                    羊皮 女士 单肩包
+                                </a>
+                                <div class="pro_price">
+                                    <div class="saleprice"><span class="pro_price_m">￥9330.00</span></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="pro_imglink" title="羊皮 女士 单肩包">
+                                <img class="loadimg" src="../img/list/18510759a6989bae555-200x240.jpg">
+                            </a>
+                            <div class="proTips">
+                                <div class="proGlobal_m"></div><a class="pro_name" target="_blank" href="../lmg/list/164514.html" title="羊皮 女士 单肩包">
+                                    <span>Givenchy 纪梵希</span><br>
+                                    羊皮 女士 单肩包
+                                </a>
+                                <div class="pro_price">
+                                    <div class="saleprice"><span class="pro_price_m">￥9330.00</span></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="pro_imglink" title="羊皮 女士 单肩包">
+                                <img class="loadimg" src="../img/list/18510759a6989bae555-200x240.jpg">
+                            </a>
+                            <div class="proTips">
+                                <div class="proGlobal_m"></div><a class="pro_name" target="_blank" href="../lmg/list/164514.html" title="羊皮 女士 单肩包">
+                                    <span>Givenchy 纪梵希</span><br>
+                                    羊皮 女士 单肩包
+                                </a>
+                                <div class="pro_price">
+                                    <div class="saleprice"><span class="pro_price_m">￥9330.00</span></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+
+
+
+
+
+       <!-- ----------------------footer---------------------- -->
+    <footer>
+        <div class="f_white w">
+            <ul class="f_white_ul">
+                <li>
+                    <dl class="l">
+                        <dt>购物指南</dt>
+                        <dd><a href="">购物流程</a></dd>
+                        <dd><a href="">配送方式</a></dd>
+                    </dl>
+                    <dl class="l">
+                        <dt>支付方式</dt>
+                        <dd><a href="">购物流程</a></dd>
+                        <dd><a href="">配送方式</a></dd>
+                    </dl>
+                    <dl class="l">
+                        <dt>商品说明</dt>
+                        <dd><a href="">购物流程</a></dd>
+                        <dd><a href="">配送方式</a></dd>
+                    </dl>
+                    <dl class="l">
+                        <dt>客服中心</dt>
+                        <dd><a href="">购物流程</a></dd>
+                        <dd><a href="">配送方式</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <span>客服电话</span>
+                    <h5>4000-250-630</h5>
+                    <p>工作日 08:30-21:30</p>
+                    <p>节假日 10:00-18:00</p>
+                </li>
+                <li>
+                    <p class="foot_subscription_t">订阅美西杂志</p>
+                    <input class="foot_subscription_m" id="rssIn" type="text" value placeholder="E-mail">
+                    <div class="foot_subscription_b">即刻订阅</div>
+                </li>
+                <li>
+                    <div>
+                        <dl>
+                            <dt>美西APP</dt>
+                            <dd><span></span></dd>
+                        </dl>
+                        <dl>
+                            <dt>官方微信</dt>
+                            <dd><span></span></dd>
+                        </dl>
+
+                    </div>
+                    <p>手机扫码即可下载美西APP或关注官方微信 </p>
+                </li>
+            </ul>
+
+        </div>
+        <div class="f_black">
+            <div class="f_top w">
+                <ul class="f_top_ul">
+                    <li><div class="ic"></div><span>100%正品保证</span></li>
+                    <li><div class="ic"></div><span>7天无忧退货</span></li></li>
+                    <li><div class="ic"></div><span>九年专注，品质保障</span></li></li>
+                </ul>
+            </div>
+            <div class="f_cut"></div>
+            <div class="f_bot w">
+                <ul class="f_bot_ul">
+                    <li class="f_bot_ul_li">
+                        <ul class="f_bot_ul_li1_text">
+                            <li><a href="">媒体报道</a></li>
+                            <li><a href="">正品保证</a></li>
+                            <li><a href="">业务合作</a></li>
+                            <li><a href="">隐私声明</a></li>
+                            <li><a href="">加入美西</a></li>
+                            <li><a href="">联系我们</a></li>
+                        </ul>
+                        <p class="f_bot_ul_li1_p">Copyright ©2008-2018，美西-高端时尚生活电商</p>
+                        <p class="f_bot_ul_li1_p"><span>沪ICP备09001221号</span><span>沪公网安备11010802017116号</span></p>
+                    </li>
+
+                    <li class="f_bot_ul_li">
+                        <p class="f_bot_ul_li2_p">合作支持</p>
+                        <ul class="brand">
+                            <li><a href=""></a></li>
+                            <li><a href=""><span></span><span>银联特约商户</span></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+<script src="../lib/jquery-3.2.1.min.js"></script>
+<script src="../js/list.js"></script>
+
+
+</body>
+
+</html>

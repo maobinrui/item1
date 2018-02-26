@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/*
+* @Author: Marte
+* @Date:   2018-02-01 16:47:29
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-02-03 16:05:43
+*/
+/* CSS Document */
+article, aside, canvas, details, figcaption, figure, footer, header, menu, nav, section, summary {
+  display: block; }
+
+body, h1, h2, h3, h4, h5, h6, p, img, a, ul, li, ol, dl, dt, dd, input, article, aside, canvas, details, figcaption, figure, footer, header, menu, nav, section, summary, table {
+  padding: 0;
+  margin: 0; }
+
+/*清间距*/
+ul, ol {
+  list-style: none; }
+
+/*清样试*/
+img {
+  border: 0;
+  display: block; }
+
+/*清除图片间隙*/
+input {
+  outline: none; }
+
+/*清除外轮廓*/
+body {
+  font: 12px "微软雅黑",Helvetica,sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #555; }
+
+/*设置整体字号行高颜色*/
+a {
+  text-decoration: none;
+  color: #666; }
+
+a:hover {
+  color: #000; }
+
+/*超链接样式*/
+.w {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+/*版心*/
+.l {
+  float: left; }
+
+.r {
+  float: right; }
+
+.headerShadow {
+  background: url(../img/headerbg.png) 0 bottom repeat-x;
+  width: 100%;
+  height: 8px;
+  margin-bottom: 20px; }
+
+/*@keyframes toTop{
+        from{
+            transform:translateY(700px)
+            }
+
+            to{
+            transform:translateY(0px)
+            }
+    }*/
+@font-face {
+  font-family: 'iconfont';
+  src: url("iconfont.eot");
+  src: url("iconfont.eot?#iefix") format("embedded-opentype"), url("iconfont.woff") format("woff"), url("iconfont.ttf") format("truetype"), url("iconfont.svg#iconfont") format("svg"); }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }

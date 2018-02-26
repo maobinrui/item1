@@ -1,0 +1,205 @@
+@charset "UTF-8";
+/*
+* @Author: Marte
+* @Date:   2018-02-06 09:16:59
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-02-06 20:39:27
+*/
+@import url(base.css);
+@import url(headernav.css);
+@import url(footer.css);
+@import url(footer-commonality.css);
+body {
+  background: #f5f5f5; }
+
+header, nav, footer {
+  background: #fff; }
+
+main h2 {
+  background: #fff;
+  font-size: 32px;
+  margin-bottom: 10px;
+  height: 70px;
+  line-height: 70px;
+  padding-left: 15px; }
+
+main .content {
+  display: flex;
+  justify-content: space-between; }
+  main .content .listScreen {
+    width: 267px;
+    box-sizing: border-box; }
+    main .content .listScreen .listScreen_li {
+      background: #fff;
+      margin-bottom: 10px;
+      padding: 0 10px;
+      line-height: 52px;
+      font-size: 14px; }
+      main .content .listScreen .listScreen_li .yiji {
+        cursor: pointer; }
+      main .content .listScreen .listScreen_li .r {
+        font-size: 24px;
+        font-family: "宋体"; }
+      main .content .listScreen .listScreen_li .bor {
+        padding: 10px 0;
+        border-top: solid 1px #e8e8e8; }
+        main .content .listScreen .listScreen_li .bor span {
+          width: 14px;
+          display: inline-block;
+          height: 14px;
+          align-self: center;
+          margin-right: 4px;
+          background: url(../img/listico.gif) no-repeat; }
+        main .content .listScreen .listScreen_li .bor .erji, main .content .listScreen .listScreen_li .bor .sanji {
+          line-height: 28px;
+          font-size: 12px;
+          cursor: pointer; }
+          main .content .listScreen .listScreen_li .bor .erji:hover, main .content .listScreen .listScreen_li .bor .sanji:hover {
+            color: #333; }
+        main .content .listScreen .listScreen_li .bor .erji {
+          padding: 5px 0 5px 0; }
+          main .content .listScreen .listScreen_li .bor .erji span {
+            background-position: 0 -14px; }
+        main .content .listScreen .listScreen_li .bor .sanji {
+          display: flex;
+          padding-left: 20px; }
+        main .content .listScreen .listScreen_li .bor .price {
+          display: flex;
+          justify-content: space-between;
+          padding: 15px 0 10px 0;
+          line-height: 32px; }
+          main .content .listScreen .listScreen_li .bor .price .priceInt {
+            border: solid 1px #ddd;
+            width: 107px;
+            height: 30px;
+            padding-left: 3px;
+            vertical-align: middle; }
+          main .content .listScreen .listScreen_li .bor .price .priceStart {
+            margin-right: 5px; }
+        main .content .listScreen .listScreen_li .bor .pricebtn {
+          display: inline-block;
+          width: 100%;
+          height: 34px;
+          background: #333;
+          color: #fff;
+          text-align: center;
+          line-height: 35px;
+          cursor: pointer; }
+        main .content .listScreen .listScreen_li .bor .color {
+          width: 49%;
+          display: inline-block;
+          line-height: 35px; }
+          main .content .listScreen .listScreen_li .bor .color span {
+            vertical-align: middle; }
+          main .content .listScreen .listScreen_li .bor .color span:nth-child(2) {
+            margin-right: 5px;
+            width: 22px;
+            height: 22px;
+            background: url(../img/list/color.gif) no-repeat;
+            display: inline-block; }
+
+main .prolistMain {
+  width: 923px;
+  box-sizing: border-box; }
+  main .prolistMain .listScreenAll {
+    width: 100%;
+    background: #fff;
+    padding: 22px 0 22px 0;
+    margin-bottom: 5px;
+    display: flex;
+    line-height: 22px; }
+    main .prolistMain .listScreenAll .listScreenItem_tit_all {
+      width: 83px;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 2px 0 0 25px;
+      cursor: pointer; }
+    main .prolistMain .listScreenAll .clearfix {
+      width: 740px; }
+      main .prolistMain .listScreenAll .clearfix .clearfix_li {
+        float: left;
+        border: solid 1px #ebebeb;
+        padding: 0 6px; }
+        main .prolistMain .listScreenAll .clearfix .clearfix_li span {
+          color: #999; }
+        main .prolistMain .listScreenAll .clearfix .clearfix_li .clearfix_li_x {
+          margin-left: 10px; }
+  main .prolistMain .eliminate {
+    color: #b3b3b3; }
+    main .prolistMain .eliminate:hover {
+      color: #333; }
+  main .prolistMain .proFilter_t {
+    background: #fff;
+    padding: 0 25px;
+    line-height: 55px; }
+    main .prolistMain .proFilter_t > span {
+      font-weight: bold; }
+    main .prolistMain .proFilter_t > a {
+      margin-left: 35px;
+      padding-right: 12px; }
+    main .prolistMain .proFilter_t .prSort01 {
+      display: inline-block;
+      width: 10px;
+      height: 12px;
+      vertical-align: middle;
+      background: url(../img/list/crumbsIco.gif) no-repeat;
+      background-position: -62px 0;
+      margin-left: 2px; }
+    main .prolistMain .proFilter_t .listscreenNum {
+      color: #b3b3b3; }
+  main .prolistMain .proList {
+    margin-top: 5px;
+    width: 928px;
+    position: relative; }
+    main .prolistMain .proList .proList_ul li {
+      float: left;
+      width: 205px;
+      padding: 10px;
+      margin: 0 5px 5px 0;
+      border: solid 1px #fff;
+      background: #fff;
+      transition-duration: .1s;
+      transition-timing-function: linear;
+      position: relative;
+      height: 371px; }
+      main .prolistMain .proList .proList_ul li .pro_imglink {
+        display: block;
+        width: 207px;
+        height: 230px;
+        text-align: center;
+        padding-top: 10px; }
+        main .prolistMain .proList .proList_ul li .pro_imglink img {
+          width: 180px;
+          display: inline; }
+      main .prolistMain .proList .proList_ul li .proTips {
+        height: 28px;
+        margin-top: 8px;
+        padding: 0 20px; }
+        main .prolistMain .proList .proList_ul li .proTips .proGlobal_m {
+          display: inline-block;
+          width: 48px;
+          height: 24px;
+          background: url(../img/list/saleTip1.png) -1px -3px no-repeat;
+          margin-right: 10px; }
+        main .prolistMain .proList .proList_ul li .proTips .pro_name {
+          display: block;
+          height: 45px;
+          padding: 0 0 9px 0;
+          line-height: 2;
+          overflow: hidden;
+          white-space: nowrap;
+          -o-text-overflow: ellipsis;
+          text-overflow: ellipsis; }
+          main .prolistMain .proList .proList_ul li .proTips .pro_name span {
+            color: #333;
+            font-weight: bold; }
+        main .prolistMain .proList .proList_ul li .proTips .pro_price {
+          height: 26px;
+          padding: 0 0 15px 0; }
+          main .prolistMain .proList .proList_ul li .proTips .pro_price .saleprice {
+            height: 18px;
+            line-height: 18px;
+            padding: 1px 0;
+            display: inline-block; }
+            main .prolistMain .proList .proList_ul li .proTips .pro_price .saleprice .pro_price_m {
+              color: #999; }
