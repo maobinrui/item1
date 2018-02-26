@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset=utf-8>
+
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="../css/login.css" />
+</head>
+
+<body>
+  <header class="w">
+    <h1 class="log"><a href="./index.html"><img src="../img/logo_02.png" alt=""></a></h1>
+    <div>
+      <p>需要帮助？<span></span>4000-250-630</p>
+    </div>
+
+
+  </header>
+  <!-- /header -->
+  <div class="headerShadow"></div>
+  <main>
+    <div class="register">
+      <form action="" method="get" accept-charset="utf-8">
+        <div class="member_title">注册美西账户</div>
+        <div class="member_li clearfix">
+          <div class="memberico03 l"></div>
+          <div class="memberint l"><input name="username" class="form-control" id="username" type="text" placeholder="请输入常用手机号" validate-title="帐号"></div>
+
+        </div>
+        <div class="clearfix">
+          <div class="verify_li clearfix" id="login_verify" style="height:36px;margin-bottom:10px;">
+            <div class="verifyInt l"><input style="height:36px;" name="verify" class="form-control" type="text" placeholder="请输入验证码" validate-title="验证码"></div>
+            <div class="all_img r">
+              <img src="../img/code.png" class="verifyImg" border="0" alt="点击刷新验证码" <!-- onclick="member_index.fleshVerify($(this)) -->">
+            </div>
+          </div>
+
+          <div class="member_li l clearfix">
+            <div class="memberico04 l"></div>
+            <div class="memberint l" style="width:150px;">
+              <input name="vcode" class="form-control" type="text" maxlength="6" placeholder="短信验证码">
+            </div>
+          </div>
+          <div class="register_ver r"><a class="acclink" href="javascript:void(0);">发送验证码</a>
+
+          </div>
+
+        </div>
+        <div class="member_li clearfix">
+          <div class="memberico02 l"></div>
+          <div class="memberint l">
+            <input id="password" name="password" class="form-control" type="password" placeholder="请输入密码" validate-title="密码">
+          </div>
+        </div>
+        <div class="member_li clearfix">
+          <div class="memberico02 l"></div>
+          <div class="memberint l">
+            <input name="password2" class="form-control" type="password" placeholder="再次输入密码" validate-title="确认密码">
+          </div>
+        </div>
+        <div class="men_err_msg">错误提示</div>
+        <button type="button" class="btn btn-primary mgR8" id="btn">注册</button>
+        <div class="m_t">"已注册？"<a class="acclink" href="./register.html">登录</a></div>
+      </form>
+    </div>
+  </main>
+  <!-- ----------------------footer---------------------- -->
+  <footer>
+    <div class="f_black">
+      <div class="f_top w">
+        <ul class="f_top_ul">
+          <li>
+            <div class="ic"></div><span>100%正品保证</span></li>
+          <li>
+            <div class="ic"></div><span>7天无忧退货</span></li>
+          </li>
+          <li>
+            <div class="ic"></div><span>九年专注，品质保障</span></li>
+          </li>
+        </ul>
+      </div>
+      <div class="f_cut"></div>
+      <div class="f_bot w">
+        <ul class="f_bot_ul">
+          <li class="f_bot_ul_li">
+            <ul class="f_bot_ul_li1_text">
+              <li><a href="">媒体报道</a></li>
+              <li><a href="">正品保证</a></li>
+              <li><a href="">业务合作</a></li>
+              <li><a href="">隐私声明</a></li>
+              <li><a href="">加入美西</a></li>
+              <li><a href="">联系我们</a></li>
+            </ul>
+            <p class="f_bot_ul_li1_p">Copyright ©2008-2018，美西-高端时尚生活电商</p>
+            <p class="f_bot_ul_li1_p"><span>沪ICP备09001221号</span><span>沪公网安备11010802017116号</span></p>
+          </li>
+
+          <li class="f_bot_ul_li">
+            <p class="f_bot_ul_li2_p">合作支持</p>
+            <ul class="brand">
+              <li><a href=""></a></li>
+              <li><a href=""><span></span><span>银联特约商户</span></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="../lib/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../js/register.js"></script>
+</body>
+
+</html>

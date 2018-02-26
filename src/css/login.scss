@@ -1,0 +1,34 @@
+/*
+* @Author: Marte
+* @Date:   2018-01-27 16:43:18
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-02-03 10:58:22
+*/
+@import "base.css";
+@import "registerlogin-commonality.css";
+@import "footer-commonality.css";
+
+
+main{
+
+    .verifyInt {
+    width: 166px;
+    height: 32px;
+
+    input {
+        width: 98%;
+        border: solid 1px #e8e8e8;
+        height: 30px;
+        line-height: 30px;
+        //height: 27px\9;
+        //padding-top: 3px\9;
+        font-size: 14px;
+        padding-left: 5px;
+        }
+    }
+    .register_ver {
+        margin-top: 9px;
+    }
+
+
+}

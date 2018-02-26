@@ -1,0 +1,263 @@
+/*
+* @Author: Marte
+* @Date:   2018-02-06 09:16:59
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-02-06 20:39:27
+*/
+@import "base.css";
+@import "headernav.css";
+@import "footer.css";
+@import "footer-commonality.css";
+body{
+    background:#f5f5f5;
+}
+header,nav,footer{
+    background:#fff;
+}
+main{
+
+    h2{
+    background: #fff;
+    font-size: 32px;
+    margin-bottom: 10px;
+    height: 70px;
+    line-height: 70px;
+    padding-left: 15px;
+    }
+    .content{
+        display:flex;
+        justify-content:space-between;
+        .listScreen{
+            width:267px;
+            box-sizing:border-box;
+            .listScreen_li{
+                background: #fff;
+                margin-bottom: 10px;
+                padding: 0 10px;
+                line-height:52px;
+                font-size: 14px;
+                    .yiji{
+                        cursor: pointer;
+                    }
+
+                .r{
+                    font-size: 24px;
+                    font-family: "宋体"
+                }
+                 .bor{
+                    padding: 10px 0;
+                    border-top: solid 1px #e8e8e8;
+                        span{
+                            width:14px;
+                            display:inline-block;
+                            height:14px;
+                            align-self:center;
+                            margin-right:4px;
+                            background: url(../img/listico.gif) no-repeat;
+                        }
+                        .erji,.sanji{
+                            line-height:28px;
+                            font-size:12px;
+                            cursor: pointer;
+                            &:hover{
+                              color: #333;
+                            }
+                        }
+                        .erji{
+                            padding: 5px 0 5px 0;
+                            span{
+                                background-position: 0 -14px;
+                                //background-position: -14px -14px;
+                            }
+                        }
+                        .sanji{
+                            display:flex;
+                            padding-left:20px;
+
+                        }
+                        .price{
+                            display:flex;
+                            justify-content:space-between;
+                            padding: 15px 0 10px 0;
+                            line-height:32px;
+                            .priceInt{
+                                border: solid 1px #ddd;
+                                    width: 107px;
+                                    height: 30px;
+                                    padding-left: 3px;
+                                    vertical-align: middle;
+                            }
+                            .priceStart {
+                                    margin-right: 5px;
+                                }
+                        }
+                        .pricebtn {
+                            display: inline-block;
+                            width: 100%;
+                            height: 34px;
+                            background: #333;
+                            color: #fff;
+                            text-align: center;
+                            line-height: 35px;
+                            cursor: pointer;
+                        }
+                        .color{
+                            width:49%;
+                            display:inline-block;
+                            line-height:35px;
+                            span{
+                                vertical-align: middle;
+                            }
+                            span:nth-child(2){
+                                margin-right: 5px;
+                                width: 22px;
+                                height: 22px;
+                                background: url(../img/list/color.gif) no-repeat;
+                                display: inline-block;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+        .prolistMain{
+            width:923px;
+            box-sizing:border-box;
+            .listScreenAll{
+                width:100%;
+                background: #fff;
+                padding: 22px 0 22px 0;
+                margin-bottom: 5px;
+                display:flex;
+                line-height:22px;
+                .listScreenItem_tit_all {
+                    width: 83px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    padding: 2px 0 0 25px;
+                    cursor: pointer;
+                }
+                .clearfix{
+                    width: 740px;
+                    .clearfix_li{
+                        float: left;
+                        border: solid 1px #ebebeb;
+                        padding: 0 6px;
+                        span{
+                            color: #999;
+                        }
+                        .clearfix_li_x{
+
+                            margin-left: 10px;
+                        }
+
+                        }
+
+
+                    }
+                }
+                .eliminate{
+                    color: #b3b3b3;
+                    &:hover{
+                        color: #333;
+                    }
+                }
+            .proFilter_t{
+                background:#fff;
+                padding:0 25px;
+                line-height:55px;
+                &>span{
+                    font-weight: bold;
+                }
+                &>a{
+                    margin-left:35px;
+                    padding-right:12px;
+                }
+                .prSort01{
+                    display: inline-block;
+                    width: 10px;
+                    height: 12px;
+                    vertical-align: middle;
+                    background: url(../img/list/crumbsIco.gif) no-repeat;
+                    background-position: -62px 0;
+                    margin-left:2px;
+
+                }
+                .listscreenNum{
+                    color: #b3b3b3;
+                }
+
+            }
+            .proList{
+                margin-top: 5px;
+                width: 928px;
+                position: relative;
+                .proList_ul{
+                    li{
+                        float: left;
+                        width: 205px;
+                        padding: 10px;
+                        margin: 0 5px 5px 0;
+                        border: solid 1px #fff;
+                        background: #fff;
+                        transition-duration: .1s;
+                        transition-timing-function: linear;
+                        position: relative;
+                        height:371px;
+
+                        .pro_imglink{
+                            display: block;
+                            width: 207px;
+                            height: 230px;
+                            text-align: center;
+                            padding-top: 10px;
+                            img{
+                                width:180px;
+                                display:inline;
+                            }
+                        }
+                        .proTips{
+                            height: 28px;
+                            margin-top: 8px;
+                            padding: 0 20px;
+                            .proGlobal_m{
+                                display: inline-block;
+                                width: 48px;
+                                height: 24px;
+                                background: url(../img/list/saleTip1.png) -1px -3px no-repeat;
+                                margin-right: 10px;
+                            }
+                            .pro_name{
+                                display: block;
+                                height: 45px;
+                                padding: 0 0 9px 0;
+                                line-height: 2;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                -o-text-overflow: ellipsis;
+                                text-overflow: ellipsis;
+                                span{
+                                    color: #333;
+                                    font-weight: bold;
+                                }
+                            }
+                            .pro_price{
+                                height: 26px;
+                                padding: 0 0 15px 0;
+                                .saleprice{
+                                    height: 18px;
+                                    line-height: 18px;
+                                    padding: 1px 0;
+                                    display: inline-block;
+                                    .pro_price_m{
+                                            color: #999;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}

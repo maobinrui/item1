@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>美西——主页</title>
+    <!-- <link rel="stylesheet" type="text/css" href="../css/base.css" /> -->
+
+    <link rel="stylesheet" type="text/css" href="../lib/swiper.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+
+    <!--<link rel="stylesheet"  href="css/style3.css" media="screen and (max-width:970px)">
+    <link rel="stylesheet"  href="css/style2.css" media="screen and (min-width:970px) and (max-width:1170px)">
+    <link rel="stylesheet"  href="css/style1.css" media="screen and (min-width:1170px)">-->
+
+</head>
+<body>
+    <header>
+        <div id="top">
+            <ul class="w">
+                <li class="l"><em class="hico01"></em><span>4000-250-630</span></li>
+                <li class="l "><a href="./activity.html" class="b"><em class="hico02"></em>下载美西APP</a>
+                    <div class="headerApp_m">
+                        <div class="sj"></div>
+                        <a href="./activity.html" class="headerApp_code" title="下载美西APP" target="_blank">
+                            <img src="../img/ewm_indexTop_1.png" alt="" />
+                            <p>“扫码下载”</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="r"><a href="./shopping.html" class="b"><em class="hico03"></em>购物袋（0）</a>
+                     <div class="headerCart_m">
+                         <div class="sj"></div>
+                         <div class="headerCart_m_info">
+                            <div class="headerCprpN">您的购物袋是空的</div>
+                         </div>
+                    </div>
+                </li>
+                <li class="r"><a href="./register.html">登录</a><a href="./login.html">注册</a></li>
+            </ul>
+        </div>
+        <div id="log" class="w">
+            <h1><a href=""><img src="../img/logo.png" alt="美西" /></a></h1>
+            <div id="seach">
+                <input id="sch_kwd" class="sch_kwd" type="text" value placeholder="请输入关键字">
+                <button class="header_search_btn " onclick="search();"></button>
+            </div>
+        </div>
+    </header><!-- /header -->
+    <nav>
+        <ul class="w">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">新近单品<em></em></a><div class="nav_list">
+                <div class="erji">
+                    <dl>
+                        <dt><a href="">男仕 Man</a></dt>
+                        <dd><a href="">包袋 Bags</a></dd>
+                        <dd><a href="">配饰 Accessories</a></dd>
+                        <dd><a href="">鞋履 Shoes</a></dd>
+                        <dd><a href="">服装 Clothes</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="">女士 Woman</a></dt>
+                        <dd><a href="">包袋 Bags</a></dd>
+                        <dd><a href="">配饰 Accessories</a></dd>
+                        <dd><a href="">鞋履 Shoes</a></dd>
+                        <dd><a href="">服装 Clothes</a></dd>
+                    </dl>
+                </div>
+            </div></li>
+            <li><a href="#">全球购</a></li>
+            <li><a href="#">女士<em></em></a><div class="nav_list">
+                <div class="erji">
+                    <dl>
+                        <dt><a href="">包袋 Bags</a></dt>
+                        <dd><a href="">手提包 Totes</a></dd>
+                        <dd><a href="">单肩包 Shoulder Bags</a></dd>
+                        <dd><a href="">斜挎包 Messenger Bags</a></dd>
+                        <dd><a href="">手拿包 Clutch Bags</a></dd>
+                        <dd><a href="">双肩包 Travel Bags</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="">配饰 Accessories</a></dt>
+                        <dd><a href="">所有配饰</a></dd>
+                        <dd><a href="">钱包 Wallets</a></dd>
+                        <dd><a href="">手表 Watches</a></dd>
+                        <dd><a href="">太阳眼镜 Sunglasses</a></dd>
+                        <dd><a href="">饰品 Jewelry</a></dd>
+                        <dd><a href="">腰带 Belts</a></dd>
+                        <dd><a href="">围巾 Scarf</a></dd>
+                        <dd><a href="">小配件 Small Acc.</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="">鞋履 Shoes</a></dt>
+                        <dd><a href="">所有鞋履</a></dd>
+                        <dd><a href="">正装皮鞋 Business Shoes</a></dd>
+                        <dd><a href="">高跟鞋 Pumps</a></dd>
+                        <dd><a href="">靴子 Boots</a></dd>
+                        <dd><a href="">运动鞋 Gym shoes</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="">服装 Clothes</a></dt>
+                        <dd><a href="">所有服装</a></dd>
+                        <dd><a href="">卫衣 Hoodies</a></dd>
+                        <dd><a href="">衬衫 Shirt</a></dd>
+                        <dd><a href="">针织/毛衫 Knit/Sweater</a></dd>
+                        <dd><a href="">运夹克 Jacket</a></dd>
+                        <dd><a href="">大衣 Coat</a></dd>
+                        <dd><a href="">半裙 Skirts</a></dd>
+                        <dd><a href="">连衣裙 Dresses</a></dd>
+                    </dl>
+                </div>
+            </div></li>
+            <li><a href="#">男仕<em></em></a><div class="nav_list">
+                <div class="erji">
+                    <dl>
+                        <dt><a href="">包袋 Bags</a></dt>
+                        <dd><a href="">手提包 Totes</a></dd>
+                        <dd><a href="">单肩包 Shoulder Bags</a></dd>
+                        <dd><a href="">斜挎包 Messenger Bags</a></dd>
+                        <dd><a href="">手拿包 Clutch Bags</a></dd>
+                        <dd><a href="">双肩包 Travel Bags</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="">配饰 Accessories</a></dt>
+                        <dd><a href="">所有配饰</a></dd>
+                        <dd><a href="">钱包 Wallets</a></dd>
+                        <dd><a href="">手表 Watches</a></dd>
+                        <dd><a href="">太阳眼镜 Sunglasses</a></dd>
+                        <dd><a href="">饰品 Jewelry</a></dd>
+                        <dd><a href="">腰带 Belts</a></dd>
+                        <dd><a href="">围巾 Scarf</a></dd>
+                        <dd><a href="">小配件 Small Acc.</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="">鞋履 Shoes</a></dt>
+                        <dd><a href="">所有鞋履</a></dd>
+                        <dd><a href="">正装皮鞋 Business Shoes</a></dd>
+                        <dd><a href="">高跟鞋 Pumps</a></dd>
+                        <dd><a href="">靴子 Boots</a></dd>
+                        <dd><a href="">运动鞋 Gym shoes</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="">服装 Clothes</a></dt>
+                        <dd><a href="">所有服装</a></dd>
+                        <dd><a href="">卫衣 Hoodies</a></dd>
+                        <dd><a href="">衬衫 Shirt</a></dd>
+                        <dd><a href="">针织/毛衫 Knit/Sweater</a></dd>
+                        <dd><a href="">运夹克 Jacket</a></dd>
+                        <dd><a href="">大衣 Coat</a></dd>
+                        <dd><a href="">半裙 Skirts</a></dd>
+                        <dd><a href="">连衣裙 Dresses</a></dd>
+                    </dl>
+                </div>
+            </div></li>
+            <li><a href="#">家居生活<em></em></a><div  class="nav_list">
+                <div class="erji">
+                    <dl>
+                        <dt><a href="">男仕 Man</a></dt>
+                        <dd><a href="">包袋 Bags</a></dd>
+                        <dd><a href="">配饰 Accessories</a></dd>
+                        <dd><a href="">鞋履 Shoes</a></dd>
+                        <dd><a href="">服装 Clothes</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="">女士 Woman</a></dt>
+                        <dd><a href="">包袋 Bags</a></dd>
+                        <dd><a href="">配饰 Accessories</a></dd>
+                        <dd><a href="">鞋履 Shoes</a></dd>
+                        <dd><a href="">服装 Clothes</a></dd>
+                    </dl>
+                </div>
+            </div></li>
+            <li><a href="#">腕表<em></em></a><div class="nav_list">
+                <div class="erji">
+                    <dl>
+                        <dt><a href="">男仕 Man</a></dt>
+                        <dd><a href="">包袋 Bags</a></dd>
+                        <dd><a href="">配饰 Accessories</a></dd>
+                        <dd><a href="">鞋履 Shoes</a></dd>
+                        <dd><a href="">服装 Clothes</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="">女士 Woman</a></dt>
+                        <dd><a href="">包袋 Bags</a></dd>
+                        <dd><a href="">配饰 Accessories</a></dd>
+                        <dd><a href="">鞋履 Shoes</a></dd>
+                        <dd><a href="">服装 Clothes</a></dd>
+                    </dl>
+                </div>
+            </div></li>
+            <li><a href="#">品牌<em></em></a><div class="nav_list">
+                <div class="erji">
+                    <dl>
+                        <dt><a href="">男仕 Man</a></dt>
+                        <dd><a href="">包袋 Bags</a></dd>
+                        <dd><a href="">配饰 Accessories</a></dd>
+                        <dd><a href="">鞋履 Shoes</a></dd>
+                        <dd><a href="">服装 Clothes</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="">女士 Woman</a></dt>
+                        <dd><a href="">包袋 Bags</a></dd>
+                        <dd><a href="">配饰 Accessories</a></dd>
+                        <dd><a href="">鞋履 Shoes</a></dd>
+                        <dd><a href="">服装 Clothes</a></dd>
+                    </dl>
+                </div>
+            </div></li>
+            <li><a href="#">Mzine</a></li>
+        </ul>
+    </nav>
+    <div class="headerShadow"></div>
+    <main class="w">
+            <div class="swiper-container  swiper-container1">
+                <div class="swiper-wrapper ">
+                  <div class="swiper-slide"><a href="./list.html"><img src="../img/1324585a6d5eaac14cb.jpg" alt=""></a></div>
+                  <div class="swiper-slide"><a  href="./list.html"><img src="../img/1324255a6d5e892a9bd.jpg" alt=""></a></div>
+                  <div class="swiper-slide"><a  href="./list.html"><img src="../img/1326065a6d5eeec5e28.jpg" alt=""></a></div>
+                </div>
+                <div class="swiper-button-next btr bt"></div>
+                <div class="swiper-button-prev btl bt"></div>
+            </div>
+        <div class="grid5_212">
+            <div class="detail">
+                <div class="headline">
+                    <div class="mid_line"></div>
+                    <div class="topic"><p>特别推荐</p><p>Special Offer</p></div>
+                </div>
+                <div class="region">
+                    <ul>
+                        <li><a href="" target="_blank" title="全年殊荣 除了业绩还要光彩照人 VECCO ZHAO/Bardot"><img src="../img/1347465a6d64027e338.jpg" alt=""></a><a href=""  target="_blank" title="优化中产性价比的身份标识 OMEGA/Rolex"><img src="../img/1349585a6d6486a73c1.jpg" alt=""></a></li>
+                        <li><a href="" target="_blank" title="穿着你穿过的外套的TA不是很美好吗Duvetica/Moncler"><img src="../img/1107235a6e8feb0f360.jpg" alt=""></a></li>
+                        <li><a href=""  target="_blank" title="与众不同的美丽新衣 Petite Studio/YIWEN STUDIO" ><img src="../img/1349215a6d6461d1de2.jpg" alt=""></a><a href="" target="_blank" title="万能款式 一年四季都需要 Versace/Prada" ><img src="../img/1350325a6d64a8b4a36.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="detail">
+                <div class="headline">
+                    <div class="mid_line"></div>
+                    <div class="topic"><p>男仕精选</p><p>For Him</p></div>
+                </div>
+                <div class="region">
+                    <ul>
+                        <li><a href="" target="_blank" title="全年殊荣 除了业绩还要光彩照人 VECCO ZHAO/Bardot"><img src="../img/1347465a6d64027e338.jpg" alt=""></a><a href=""  target="_blank" title="优化中产性价比的身份标识 OMEGA/Rolex"><img src="../img/1349585a6d6486a73c1.jpg" alt=""></a></li>
+                        <li><a href="" target="_blank" title="穿着你穿过的外套的TA不是很美好吗Duvetica/Moncler"><img src="../img/1354265a6d6592a6704.jpg" alt=""></a></li>
+                        <li><a href=""  target="_blank" title="与众不同的美丽新衣 Petite Studio/YIWEN STUDIO" ><img src="../img/1349215a6d6461d1de2.jpg" alt=""></a><a href="" target="_blank" title="万能款式 一年四季都需要 Versace/Prada" ><img src="../img/1350325a6d64a8b4a36.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="detail">
+                <div class="headline">
+                    <div class="mid_line"></div>
+                    <div class="topic"><p>女士精选</p><p>For Her</p></div>
+                </div>
+                <div class="region">
+                    <ul>
+                        <li><a href="" target="_blank" title="全年殊荣 除了业绩还要光彩照人 VECCO ZHAO/Bardot"><img src="../img/1347465a6d64027e338.jpg" alt=""></a><a href=""  target="_blank" title="优化中产性价比的身份标识 OMEGA/Rolex"><img src="../img/1349585a6d6486a73c1.jpg" alt=""></a></li>
+                        <li><a href="" target="_blank" title="穿着你穿过的外套的TA不是很美好吗Duvetica/Moncler"><img src="../img/1359365a6d66c85581f.jpg" alt=""></a></li>
+                        <li><a href=""  target="_blank" title="与众不同的美丽新衣 Petite Studio/YIWEN STUDIO" ><img src="../img/1349215a6d6461d1de2.jpg" alt=""></a><a href="" target="_blank" title="万能款式 一年四季都需要 Versace/Prada" ><img src="../img/1350325a6d64a8b4a36.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="detail">
+                <div class="headline">
+                    <div class="mid_line"></div>
+                    <div class="topic"><p>正被选购</p><p>BEING SOLD</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-container  swiper-container2 slide_small">
+            <ul class="slide_small_ul swiper-wrapper">
+                <li class="swiper-slide"><a href=""><img src="../img/1525125a2649d814483-160x192.jpg" alt=""><p>"Downia"</p><p>"Downia"</p></a><div class="c_gray">已加入收藏</div></li>
+                <li class="swiper-slide"><a href=""><img src="../img/1501515a26445f6f40d-160x192.jpg" alt=""><p>"Downia"</p><p>"Downia"</p></a><div class="c_gray">已加入收藏</div></li>
+                <li class="swiper-slide"><a href=""><img src="../img/1636595a2ba0abeb96c-160x192.jpg" alt=""><p>"Downia"</p><p>"Downia"</p></a><div class="c_gray">已加入收藏</div></li>
+                <li class="swiper-slide"><a href=""><img src="../img/1525125a2649d814483-160x192.jpg" alt=""><p>"Downia"</p><p>"Downia"</p></a><div class="c_gray">已加入收藏</div></li>
+                <li class="swiper-slide"><a href=""><img src="../img/1501515a26445f6f40d-160x192.jpg" alt=""><p>"Downia"</p><p>"Downia"</p></a><div class="c_gray">已加入收藏</div></li>
+                <li class="swiper-slide"><a href=""><img src="../img/1525125a2649d814483-160x192.jpg" alt=""><p>"Downia"</p><p>"Downia"</p></a><div class="c_gray">已加入收藏</div></li>
+                <li class="swiper-slide"><a href=""><img src="../img/1501515a26445f6f40d-160x192.jpg" alt=""><p>"Downia"</p><p>"Downia"</p></a><div class="c_gray">已加入收藏</div></li>
+                <li class="swiper-slide"><a href=""><img src="../img/1525125a2649d814483-160x192.jpg" alt=""><p>"Downia"</p><p>"Downia"</p></a><div class="c_gray">已加入收藏</div></li>
+                <li class="swiper-slide"><a href=""><img src="../img/1501515a26445f6f40d-160x192.jpg" alt=""><p>"Downia"</p><p>"Downia"</p></a><div class="c_gray">已加入收藏</div></li>
+                <li class="swiper-slide"><a href=""><img src="../img/1525125a2649d814483-160x192.jpg" alt=""><p>"Downia"</p><p>"Downia"</p></a><div class="c_gray">已加入收藏</div></li>
+                <li class="swiper-slide"><a href=""><img src="../img/1501515a26445f6f40d-160x192.jpg" alt=""><p>"Downia"</p><p>"Downia"</p></a><div class="c_gray">已加入收藏</div></li>
+                <li class="swiper-slide"><a href=""><img src="../img/1525125a2649d814483-160x192.jpg" alt=""><p>"Downia"</p><p>"Downia"</p></a><div class="c_gray">已加入收藏</div></li>
+                <li class="swiper-slide"><a href=""><img src="../img/1501515a26445f6f40d-160x192.jpg" alt=""></a><div class="c_gray">已加入收藏</div></li>
+                <li class="swiper-slide"><a href=""><img src="../img/1525125a2649d814483-160x192.jpg" alt=""></a><div class="c_gray">已加入收藏</div></li>
+                <li class="swiper-slide"><a href=""><img src="../img/1501515a26445f6f40d-160x192.jpg" alt=""></a><div class="c_gray">已加入收藏</div></li>
+                <li class="swiper-slide"><a href=""><img src="../img/1525125a2649d814483-160x192.jpg" alt=""></a><div class="c_gray">已加入收藏</div></li>
+                <li class="swiper-slide"><a href=""><img src="../img/1501515a26445f6f40d-160x192.jpg" alt=""></a><div class="c_gray">已加入收藏</div></li>
+                <li class="swiper-slide"><a href=""><img src="../img/1525125a2649d814483-160x192.jpg" alt=""></a><div class="c_gray">已加入收藏</div></li>
+                <li class="swiper-slide"><a href=""><img src="../img/1501515a26445f6f40d-160x192.jpg" alt=""></a><div class="c_gray">已加入收藏</div></li>
+                <li class="swiper-slide"><a href=""><img src="../img/1525125a2649d814483-160x192.jpg" alt=""></a></li>
+                <li class="swiper-slide"><a href=""><img src="../img/1501515a26445f6f40d-160x192.jpg" alt=""></a></li>
+                <li class="swiper-slide"><a href=""><img src="../img/1525125a2649d814483-160x192.jpg" alt=""></a></li>
+                <li class="swiper-slide"><a href=""><img src="../img/1501515a26445f6f40d-160x192.jpg" alt=""></a></li>
+                <li class="swiper-slide"><a href=""><img src="../img/1525125a2649d814483-160x192.jpg" alt=""></a></li>
+                <li class="swiper-slide"><a href=""><img src="../img/1501515a26445f6f40d-160x192.jpg" alt=""></a></li>
+                <li class="swiper-slide"><a href=""><img src="../img/1525125a2649d814483-160x192.jpg" alt=""></a></li>
+            </ul>
+            <div class="swiper-button-prev small_bt small_btl"></div>
+            <div class="swiper-button-next small_bt small_btr"></div>
+        </div>
+
+    </main>
+
+    <!-- ----------------------footer---------------------- -->
+    <footer>
+        <div class="f_white w">
+            <ul class="f_white_ul">
+                <li>
+                    <dl class="l">
+                        <dt>购物指南</dt>
+                        <dd><a href="">购物流程</a></dd>
+                        <dd><a href="">配送方式</a></dd>
+                    </dl>
+                    <dl class="l">
+                        <dt>支付方式</dt>
+                        <dd><a href="">购物流程</a></dd>
+                        <dd><a href="">配送方式</a></dd>
+                    </dl>
+                    <dl class="l">
+                        <dt>商品说明</dt>
+                        <dd><a href="">购物流程</a></dd>
+                        <dd><a href="">配送方式</a></dd>
+                    </dl>
+                    <dl class="l">
+                        <dt>客服中心</dt>
+                        <dd><a href="">购物流程</a></dd>
+                        <dd><a href="">配送方式</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <span>客服电话</span>
+                    <h5>4000-250-630</h5>
+                    <p>工作日 08:30-21:30</p>
+                    <p>节假日 10:00-18:00</p>
+                </li>
+                <li>
+                    <p class="foot_subscription_t">订阅美西杂志</p>
+                    <input class="foot_subscription_m" id="rssIn" type="text" value placeholder="E-mail">
+                    <div class="foot_subscription_b">即刻订阅</div>
+                </li>
+                <li>
+                    <div>
+                        <dl>
+                            <dt>美西APP</dt>
+                            <dd><span></span></dd>
+                        </dl>
+                        <dl>
+                            <dt>官方微信</dt>
+                            <dd><span></span></dd>
+                        </dl>
+
+                    </div>
+                    <p>手机扫码即可下载美西APP或关注官方微信 </p>
+                </li>
+            </ul>
+
+        </div>
+        <div class="f_black">
+            <div class="f_top w">
+                <ul class="f_top_ul">
+                    <li><div class="ic"></div><span>100%正品保证</span></li>
+                    <li><div class="ic"></div><span>7天无忧退货</span></li></li>
+                    <li><div class="ic"></div><span>九年专注，品质保障</span></li></li>
+                </ul>
+            </div>
+            <div class="f_cut"></div>
+            <div class="f_bot w">
+                <ul class="f_bot_ul">
+                    <li class="f_bot_ul_li">
+                        <ul class="f_bot_ul_li1_text">
+                            <li><a href="">媒体报道</a></li>
+                            <li><a href="">正品保证</a></li>
+                            <li><a href="">业务合作</a></li>
+                            <li><a href="">隐私声明</a></li>
+                            <li><a href="">加入美西</a></li>
+                            <li><a href="">联系我们</a></li>
+                        </ul>
+                        <p class="f_bot_ul_li1_p">Copyright ©2008-2018，美西-高端时尚生活电商</p>
+                        <p class="f_bot_ul_li1_p"><span>沪ICP备09001221号</span><span>沪公网安备11010802017116号</span></p>
+                    </li>
+
+                    <li class="f_bot_ul_li">
+                        <p class="f_bot_ul_li2_p">合作支持</p>
+                        <ul class="brand">
+                            <li><a href=""></a></li>
+                            <li><a href=""><span></span><span>银联特约商户</span></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+<script src="../lib/jquery-3.2.1.min.js"></script>
+<script src="../lib/swiper.min.js" ></script>
+<script src="../js/slide.js"></script>
+
+
+</body>
+
+</html>

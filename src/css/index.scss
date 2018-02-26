@@ -1,0 +1,146 @@
+/*
+* @Author: Marte
+* @Date:   2018-01-27 16:43:06
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-02-04 17:39:03
+*/
+@import "base.css";
+@import "headernav.css";
+@import "footer.css";
+@import "footer-commonality.css";
+
+/*----------------main------------------*/
+main{
+    .swiper-container:nth-of-type(1){
+        height:600px;
+
+        .bt{
+            display:none;
+            width:27px;
+            height:66px;
+            position:absolute;
+            background:url(../img/jt7.png) no-repeat;
+            top:50%;
+            z-index:500;
+
+        }
+        //.btl{
+        //    background-position:0 0;
+        //    left:10px;
+        //}
+        //.btr{
+        //    background-position: 0 -66px;
+        //    right:10px;
+        //}
+        &:hover .bt{
+            display:block;
+        }
+        .btl{
+            background-position:0 -201px;
+            //left:10px;
+            &:hover{
+                background-position:0 0;
+            }
+        }
+        .btr{
+            background-position: 0 -134px;
+            //right:10px;
+            &:hover{
+                background-position: 0 -67px;
+            }
+        }
+
+    }
+    .grid5_212{
+        .detail{
+            .headline{
+                height: 54px;
+                margin: 23px 0 10px 0;
+                position:relative;
+                .mid_line{
+                    position: absolute;
+                    border-bottom: 1px solid #e8e8e8;
+                    top: 24px;
+                    left: 0;
+                    width: 100%;
+                }
+                .topic{
+                    position:relative;
+                    width: 260px;
+                    background: #fff;
+                    margin: 0 auto;
+                    text-align: center;
+                    font-size: 16px;
+                    font-family: 微软雅黑;
+                    color: #666;
+                    p:nth-child(2){
+                        font-size: 14px;
+                        color: #999;
+                    }
+                }
+            }
+        }
+        .region{
+
+            ul{
+                display:flex;
+                li{
+                    flex:1;
+                    box-sizing:border-box;
+                    &:nth-child(2){
+                        margin:0 12px;
+                    }
+                    a:nth-child(2){
+                        display:block;
+                        margin-top:12px;
+                    }
+                }
+            }
+        }
+    }
+    .slide_small{
+        overflow:hidden;
+        position:relative;
+            ul{
+                display:flex;
+                li{
+                    text-align:center;
+                    height:260px;
+                    width:160px;
+                    margin:5px 20px 0;
+                    a{
+                        p{
+                            color: #555;
+                            line-height:22px;
+                        }
+                    }
+                    .c_gray{
+                        color: #ccc;
+                    }
+                }
+            }
+        .small_bt{
+            width: 17px;
+            height: 38px;
+            top: 100px;
+            position: absolute;
+            cursor: pointer;
+        }
+        .small_btl{
+            left: 0;
+            background: url(../img/pre_btn.png) no-repeat;
+        }
+        .small_btr{
+            right: 0;
+            background: url(../img/next_btn.png) no-repeat;
+        }
+    }
+}
+/*----------------footer---------------------*/
+footer{
+    margin-top:30px;
+    background: #fff;
+    border-top: 1px solid #e8e8e8;
+
+
+}

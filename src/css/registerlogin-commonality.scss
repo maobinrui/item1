@@ -1,0 +1,161 @@
+/*
+* @Author: Marte
+* @Date:   2018-02-01 16:40:26
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-02-03 13:14:48
+*/
+header{
+    height:146px;
+    display:flex;
+    justify-content:space-between;
+    h1{
+        width: 131px;
+        height: 65px;
+        padding-top: 39px;
+    }
+    div{
+        p{
+            line-height:146px;
+            font-size:14px;
+            span{
+                display:inline-block;
+                width: 20px;
+                height: 17px;
+                background: url(../img/headico.png) no-repeat;
+                margin:0 4px 0 15px;
+            }
+        }
+    }
+}
+
+
+main{
+    height:535px;
+    position: relative;
+    background: #fefefe url(../img/memberbg.jpg) center 0 no-repeat;
+    .register{
+        position: absolute;
+        top: 25px;
+        left: 50%;
+        margin-left: 150px;
+        width: 298px;
+        padding: 30px 40px;
+        background: #fff;
+        border: solid 1px #e8e8e8;
+        box-shadow: 3px 3px 7px #eee;
+        .member_title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .member_li {
+            border: solid 1px #e8e8e8;
+            background: #fff;
+            margin-bottom: 10px;
+            padding: 4px 0;
+            .memberico01, .memberico02, .memberico03, .memberico04 {
+                width: 26px;
+                height: 26px;
+                padding-right: 4px;
+                background: url(../img/memberico.gif) no-repeat;
+                margin: 0 4px 0 6px;
+                border-right: solid 1px #e8e8e8;
+            }
+            .memberico02 {
+                background-position: -26px 0;
+            }
+            .memberint {
+                width: 240px;
+                margin: 0 0 0 4px;
+                position: relative;
+                input {
+                    width: 100%;
+                    padding: 0;
+                    border: none;
+                    font-size: 14px;
+                    height: 26px;
+                    line-height: 26px;
+                    color: #333;
+                }
+            }
+        }
+        .clearfix:after {
+            display: block;
+            clear: both;
+            content: ".";
+            visibility: hidden;
+            height: 0;
+        }
+        .m_opt {
+            padding: 7px 0 5px 0;
+        }
+        .men_err_msg {
+            line-height: 30px;
+            color: #cc3d3d;
+        }
+        button{
+            width: 100%;
+            height: 48px;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            font-size: 18px;
+            font-family: "微软雅黑";
+        }
+        .m_t{
+            text-align: right;
+            margin: 20px 0 7px 0;
+            a.acclink {
+                color: #669aca;
+            }
+        }
+        .jointLogonBox {
+            .jointLogonBox_tit {
+                height: 20px;
+                position: relative;
+                .jlb_mid_line {
+                    border-bottom: solid 1px #e8e8e8;
+                    left: 0;
+                    top: 8px;
+                    width: 100%;
+                    position: absolute;
+                }
+                .jlb_theme {
+                    background: #fff;
+                    color: #999;
+                    margin: 0 auto;
+                    text-align: center;
+                    width: 110px;
+                    position: relative;
+                }
+            }
+        }
+        .jointLogonBox_ico {
+            padding: 20px 25px 5px 25px;
+        }
+        .jointLogonBox_ico li {
+
+            width: 50%;
+            a {
+                display: block;
+                width: 35px;
+                height: 35px;
+                background: url(../img/jointLogin.gif) no-repeat;
+                margin: 0 auto;
+                filter: alpha(opacity=50);
+                opacity: .5;
+            }
+            .jlb_wechat {
+                background-position: -35px 0;
+            }
+            .jlb_sina {
+                background-position: 0 0;
+            }
+            &:hover a{
+                opacity: 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,139 @@
+/*
+* @Author: Marte
+* @Date:   2018-02-03 14:53:15
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-02-05 20:26:01
+*/
+@import "base.css";
+@import "headernav.css";
+@import "footer.css";
+@import "footer-commonality.css";
+
+main{
+    &>div{
+        margin-bottom: 20px;
+        border: solid 1px #e8e8e8;
+    }
+    .car{
+        .con{
+            width:900px;
+            height:209px;
+            margin:55px 149px 0;
+            padding-bottom:96px;
+            text-align: center;
+            .cartNico {
+                width: 46px;
+                height: 48px;
+                background: url(../img/shoppingimg/cartNone.gif) no-repeat;
+                margin: 0px auto;
+            }
+            .cartNtxt {
+                font-size: 22px;
+                color: rgb(153, 153, 153);
+                margin: 15px 0px;
+            }
+            .cartNlog {
+
+                color: rgb(153, 153, 153);
+            }
+            .cartNbtn{
+                    width: 350px;
+                    margin: 40px auto 0px;
+                    display:flex;
+                    a {
+                        display: inline-block;
+                        width: 150px;
+                        height: 40px;
+                        line-height: 40px;
+                        font-size: 14px;
+                        color: rgb(255, 255, 255);
+                        text-align: center;
+                        margin: 0px 10px;
+                        background: rgb(51, 51, 51);
+                        border-radius: 3px;
+                    }
+            }
+
+        }
+    }
+    .like{
+        .cart_recommend_title{
+            height: 70px;
+            line-height: 70px;
+            border-bottom: solid 1px #e8e8e8;
+            margin: 0 30px;
+            //}
+
+        }
+        .swiper-container3{
+            width: 1140px;
+            overflow: hidden;
+            position:relative;
+            .slide_small_ul{
+                width:1048px;
+                padding: 20px 40px;
+                margin: 0 auto;
+                visibility: visible;
+
+                z-index: 2;
+                left: 0px;
+                li{
+                    float: left;
+                    width: 220px;
+                    height: 382px;
+                    margin: 0 21px;
+                    text-align: center;
+                    a{
+                        display:block;
+
+                        img{
+                            margin:0 auto;
+
+                        }
+                        .pro_recommend_name{
+                            padding: 10px 16px 16px 16px;
+                            line-height: 2;
+                            margin-bottom: 5px;
+
+                        }
+                    }
+                    .money{
+                        color: #ccc;
+                        margin-top: 10px;
+                    }
+                    .btn{
+                        width: 126px;
+                        height: 33px;
+                        line-height: 33px;
+                        border: solid 1px #e8e8e8;
+                        margin: 25px auto 30px;
+                    }
+                }
+            }
+            .small_bt{
+                width: 17px;
+                height: 38px;
+                position: absolute;
+                z-index: 3;
+                background: #fff;
+                cursor: pointer;
+
+                top:150px;
+            }
+            .prev{
+                left:0;
+                background: url(../img/pre_btn.png) no-repeat;
+            }
+            .next{
+                right:0;
+                background: url(../img/next_btn.png) no-repeat;
+
+            }
+        }
+
+
+
+    }
+
+
+}
